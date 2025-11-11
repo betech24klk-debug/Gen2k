@@ -1,0 +1,22 @@
+{
+  "name": "portfolio-gallery",
+  "version": "1.0.0",
+  "description": "Modern portfolio gallery with Supabase backend",
+  "scripts": {
+    "install:all": "cd frontend && yarn install && cd ../backend && pip install -r requirements.txt",
+    "dev:backend": "cd backend && uvicorn server:app --reload --host 0.0.0.0 --port 8001",
+    "dev:frontend": "cd frontend && yarn start",
+    "build:frontend": "cd frontend && yarn build",
+    "verify": "bash verify_setup.sh",
+    "start": "echo 'Use dev:backend and dev:frontend in separate terminals'"
+  },
+  "keywords": [
+    "portfolio",
+    "gallery",
+    "react",
+    "fastapi",
+    "supabase"
+  ],
+  "author": "Your Name",
+  "license": "MIT"
+}
